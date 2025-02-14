@@ -1,0 +1,119 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  background-color: #d43f41;
+  color: #fffbef;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  width: 100px;
+  border-style: solid;
+  border-color: #d43f41;
+}
+button:hover {
+  color: #d43f41;
+  background-color: #fffbef;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 400px) {
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    position: relative;
+    background-color: #d43f41;
+    color: #fffbef;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+  }
+  .wave {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    position: relative;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    background-color: #d43f41;
+    color: #fffbef;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+  }
+  .wave {
+    position: absolute;
+    top: 56%;
+    left: 0;
+    width: 100%;
+  }
+}
+.opskriftbillede {
+  border-radius: 25px 25px 0 0;
+}
+
+.text {
+  padding: 15px;
+}
+
+.toRecepe {
+  margin-left: 10px;
+  background-color: #fffbef;
+  color: #5e4f42;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding-right: 35px;
+}
+
+.toRecepe:hover {
+  color: #d43f41;
+  border-radius: 25px;
+}

@@ -1,0 +1,263 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/************************** Design ******************************/
+/*
+Farver: 
+#D43F41 - header 
+#D43F41 - footer
+#FFFBEF - baggrundsfarve
+#5e4f42 - tekst farve 
+
+Fonte: 
+h1 {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5e4f42;
+}
+
+h2 {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Chenla", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+/************************** Menu ******************************/
+header {
+  position: sticky;
+  top: 0;
+  background-image: url(header.svg);
+  aspect-ratio: 1513/186;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  z-index: 100;
+}
+
+.search {
+  position: absolute;
+  float: right;
+  padding: 6px;
+  border-radius: 25px;
+  border: none;
+  top: 20px;
+  right: 47px;
+  font-size: 17px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  font-size: 1.9rem;
+  text-decoration: none;
+  padding: 7px;
+}
+.logo:hover {
+  background-color: #fffbef;
+  color: #d43f41;
+  border-radius: 25px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.menu li:last-child {
+  margin-right: 20px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  color: #fffbef;
+}
+
+.menu a:hover {
+  background-color: #fffbef;
+  color: #d43f41;
+  border-radius: 25px;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 4px;
+  border-radius: 25px;
+  background-color: #fffbef;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .menu {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  header {
+    align-items: center;
+  }
+  .logo {
+    font-family: "Cherry Bomb One", serif;
+    font-weight: 400;
+    color: #fffbef;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 7px;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #d43f41;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 60%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Cherry Bomb One", serif;
+    font-weight: 400;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/************************** Generelt ******************************/
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+body {
+  background-color: #fffbef;
+}
+
+h1 {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5e4f42;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: "Chenla", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fffbef;
+}
+
+footer {
+  background-image: url(footer.svg);
+  aspect-ratio: 1513/109;
+  color: #fffbef;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+}
+.footnavn {
+  padding-left: 65%;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.knap {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10%;
+  border-radius: 25px;
+}
+.knap:hover {
+  background-color: #fffbef;
+  color: #d43f41;
+  border-radius: 25px;
+  border-style: solid;
+}

@@ -1,3 +1,11 @@
-<svg width="335" height="30" viewBox="0 0 335 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M159.238 11.8374C97.5456 -8.25581 27.3742 3.46526 0 11.8374V29.5668H335V11.8374C302.118 20.2096 220.93 31.9307 159.238 11.8374Z" fill="#D43F41"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d43f41;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M159.24,12.14C97.55-8.5,27.37,3.54,0,12.14v18.22h335V12.14c-32.88,8.6-114.07,20.65-175.76,0Z"/>
 </svg>

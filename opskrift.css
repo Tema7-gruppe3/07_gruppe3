@@ -1,0 +1,13 @@
+.product_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.ingredi {
+  background-image: url(ingre.svg);
+  background-size: cover;
+  object-fit: cover;
+  aspect-ratio: 532/734;
+}

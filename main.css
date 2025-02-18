@@ -238,12 +238,14 @@ footer {
   font-family: "Cherry Bomb One", serif;
   font-weight: 400;
   background-size: cover;
+  display: grid;
 }
 .footnavn {
-  padding-left: 65%;
-  text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-top: 10px;
+  justify-self: end;
+  padding-right: 110px;
+  padding-top: 20px;
 }
 
 .knap {
@@ -254,7 +256,6 @@ footer {
   font-size: 2rem;
   text-decoration: none;
   padding: 10px;
-  margin: 10%;
   border-radius: 25px;
 }
 .knap:hover {
@@ -262,4 +263,17 @@ footer {
   color: #d43f41;
   border-radius: 25px;
   border-style: solid;
+}
+.form-felt p {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+}
+form {
+  padding-top: 85px;
+  padding-left: 50px;
+}
+form h1 {
+  padding-bottom: 0;
+  color: #fffbef;
 }

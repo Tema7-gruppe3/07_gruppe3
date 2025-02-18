@@ -29,12 +29,11 @@ function showList(products) {
       //products.map for hvert produkt (product =>) puttes et nyt produkt ind i variablen markup
       (product) =>
         `<div class="card">
-            <a href="opskrift.html?id=${product.id}">
+            <a class="opskrift_billede" href="opskrift.html?id=${product.id}">
             <img class="opskriftbillede"
-                        src="https://cdn.dummyjson.com/recipe-images/${product.id}.webp" alt="produktbillede"></a>
-            <div class="wave">
-                <img src="wave.svg" alt="wave">
-            </div>
+                        src="https://cdn.dummyjson.com/recipe-images/${product.id}.webp" alt="produktbillede">
+                <img class="wave" src="wave.svg" alt="wave">
+                </a>
             <div class="text">
                 <h2>${product.name}</h2>
                 <p>Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>

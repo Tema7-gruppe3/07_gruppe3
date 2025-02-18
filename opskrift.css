@@ -5,9 +5,46 @@
   gap: 20px;
 }
 
-.ingredi {
+.ingredients_container {
   background-image: url(ingre.svg);
   background-size: cover;
   object-fit: cover;
   aspect-ratio: 532/734;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ingredients_container h2 {
+  margin-left: 5vw;
+  margin-top: 1vw;
+  color: white;
+  font-size: 2rem;
+}
+
+.ingredients_container ul {
+  margin-left: 6vw;
+  color: white;
+}
+
+@media screen and (max-width: 680px) {
+  .product_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients_container h2 {
+    margin-left: 13vw;
+    margin-top: 1vw;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .ingredients_container ul {
+    margin-left: 15vw;
+    color: white;
+  }
 }

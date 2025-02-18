@@ -36,14 +36,35 @@
     </header>
     <main>
         <h1 class="center">Recipes</h1>
-        <div class="buttons">
-            <button data-mealType="All">All</button>
-            <button data-mealType="Breakfast">Breakfast</button>
-            <button data-mealType="Lunch">Lunch</button>
-            <button data-mealType="Dinner">Dinner</button>
-            <button data-mealType="Dessert">Dessert</button>
-        </div>
+        <select id="cuisine_filter">
+            <option value="All" default>All</option>
+            <option value="American">American</option>
+            <option value="Asian">Asian</option>
+            <option value="Brazilian">Brazilian</option>
+            <option value="Greek">Greek</option>
+            <option value="Indian">Indian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Lebanese">Lebanese</option>
+            <option value="Mediterranean">Mediterranean</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Moroccan">Moroccan</option>
+            <option value="Pakistani">Pakistani</option>
+            <option value="Russian">Russian</option>
+            <option value="Smoothie">Smoothie</option>
+            <option value="Thai">Thai</option>
+            <option value="Turkish">Turkish</option>
+        </select>
+
         <div class="product_list_container">
+          feature_js-opskriftliste
+            <!-- <div class="card">
+                <a href="opskrift.html"><img class="opskriftbillede"
+                        src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="produktbillede"></a>
+                <div class="wave">
+                    <img src="wave.svg" alt="wave">
+                </div>
             <div class="card">
                 <a class="opskrift_billede" href="opskrift.html">
                     <img class="opskriftbillede" src="https://cdn.dummyjson.com/recipe-images/1.webp"
@@ -156,11 +177,11 @@
                         To recipe
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer>
-        <h2 class="footnavn">NAM NAM</h2>
+        <a class="footnavn" href="index.html">NAM NAM</a>
     </footer>
 </body>
 

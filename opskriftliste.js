@@ -40,9 +40,14 @@ selectElement.addEventListener("change", (event) => {
     endPoint = `https://dummyjson.com/recipes/tag/${cusine}`;
   }
 
+ feature_dokumentation
+
   // window.location.href = `opskriftliste.html?cuisine=${event.target.value}`;
+ main
   console.log("endPoint ", endPoint);
   loadData();
+
+  document.querySelector(".category_title").textContent = `${cusine}`;
 });
 
 function showList(products) {

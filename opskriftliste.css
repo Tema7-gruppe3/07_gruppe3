@@ -73,7 +73,7 @@ button:hover {
   .card {
     position: relative;
     grid-template-rows: subgrid;
-    grid-row: span 3;
+    grid-row: span 4;
     background-color: #d43f41;
     color: #fffbef;
     gap: 10px;
@@ -122,4 +122,23 @@ button:hover {
 .toRecepe:hover {
   color: #d43f41;
   border-radius: 25px;
+}
+
+select {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+option {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
 }

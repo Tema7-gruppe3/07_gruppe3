@@ -26,26 +26,26 @@ fetch(`https://dummyjson.com/recipes/${recipeId}`)
                 <div class="ingredients_container">
                     <h2>Ingredients</h2>
                     <ul>
-                        <li class="${!data.ingredients[1] && "hide"}"><input type="checkbox"> &nbsp ${data.ingredients[1]}</li>
-                        <li class="${!data.ingredients[2] && "hide"}"> <input type="checkbox">&nbsp ${data.ingredients[2]}</li>
-                        <li class="${!data.ingredients[3] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[3]}</li>
-                        <li class="${!data.ingredients[4] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[4]}</li>
-                        <li class="${!data.ingredients[5] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[5]}</li>
-                        <li class="${!data.ingredients[6] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[6]}</li>
-                        <li class="${!data.ingredients[7] && "hide"}"> <input type="checkbox">&nbsp ${data.ingredients[7]}</li>
-                        <li class="${!data.ingredients[8] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[8]}</li>
-                        <li class="${!data.ingredients[9] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[9]}</li>
-                        <li class="${!data.ingredients[10] && "hide"}"> <input type="checkbox">&nbsp ${data.ingredients[10]}</li>
-                        <li class="${!data.ingredients[11] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[11]}</li>
-                        <li class="${!data.ingredients[12] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[12]}</li>
-                        <li class="${!data.ingredients[13] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[13]}</li>
-                        <li class="${!data.ingredients[14] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[14]}</li>
-                        <li class="${!data.ingredients[15] && "hide"}"> <input type="checkbox">&nbsp ${data.ingredients[15]}</li>
-                        <li class="${!data.ingredients[16] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[16]}</li>
-                        <li class="${!data.ingredients[17] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[17]}</li>
-                        <li class="${!data.ingredients[18] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[18]}</li>
-                        <li class="${!data.ingredients[19] && "hide"}"> <input type="checkbox"> &nbsp${data.ingredients[19]}</li>
-                        <li class="${!data.ingredients[20] && "hide"}"> <input type="checkbox">&nbsp ${data.ingredients[20]}</li>
+                        <li class="${!data.ingredients[1] && "hide"}"><input type="checkbox">&nbsp${data.ingredients[1]}</li>
+                        <li class="${!data.ingredients[2] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[2]}</li>
+                        <li class="${!data.ingredients[3] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[3]}</li>
+                        <li class="${!data.ingredients[4] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[4]}</li>
+                        <li class="${!data.ingredients[5] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[5]}</li>
+                        <li class="${!data.ingredients[6] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[6]}</li>
+                        <li class="${!data.ingredients[7] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[7]}</li>
+                        <li class="${!data.ingredients[8] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[8]}</li>
+                        <li class="${!data.ingredients[9] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[9]}</li>
+                        <li class="${!data.ingredients[10] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[10]}</li>
+                        <li class="${!data.ingredients[11] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[11]}</li>
+                        <li class="${!data.ingredients[12] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[12]}</li>
+                        <li class="${!data.ingredients[13] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[13]}</li>
+                        <li class="${!data.ingredients[14] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[14]}</li>
+                        <li class="${!data.ingredients[15] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[15]}</li>
+                        <li class="${!data.ingredients[16] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[16]}</li>
+                        <li class="${!data.ingredients[17] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[17]}</li>
+                        <li class="${!data.ingredients[18] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[18]}</li>
+                        <li class="${!data.ingredients[19] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[19]}</li>
+                        <li class="${!data.ingredients[20] && "hide"}"> <input type="checkbox">&nbsp${data.ingredients[20]}</li>
                     </ul>
                 </div>
             </div>

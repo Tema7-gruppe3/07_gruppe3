@@ -60,7 +60,8 @@
 .hide {
   display: none;
 }
-li {
+
+.ingredients_container li {
   list-style: none;
   font-family: "Chenla", sans-serif;
   font-size: 1.1rem;

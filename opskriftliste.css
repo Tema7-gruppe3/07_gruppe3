@@ -14,6 +14,35 @@ img {
   text-align: center;
 }
 
+.search {
+  padding: 6px;
+  border-radius: 25px;
+  border: none;
+  font-size: 17px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  background-color: #d43f41;
+  color: white;
+}
+
+select {
+  height: 40px;
+  align-self: end;
+  padding: 0px 8px 8px 8px;
+  display: inline;
+  border-radius: 25px;
+  border: none;
+  font-size: 25px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  background-color: #d43f41;
+  color: white;
+}
+
+form {
+  justify-self: end;
+}
+
 button {
   background-color: #d43f41;
   color: #fffbef;
@@ -80,6 +109,11 @@ button:hover {
     padding-bottom: 15px;
     border-radius: 25px;
   }
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
 }
 
 .opskrift_billede {

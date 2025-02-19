@@ -44,7 +44,7 @@ function showList(products) {
                 <p>Servings: ${product.servings} </p>
             </div>
             <div>
-                <a class="toRecepe" href="opskrift.html">
+                <a class="toRecepe" href="opskrift.html?id=${product.id}">
                     To recipe
                 </a>
             </div>

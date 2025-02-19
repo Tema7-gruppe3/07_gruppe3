@@ -1,14 +1,13 @@
 const productContainer = document.querySelector(".product_list_container");
-
-const myCuisine = new URLSearchParams(window.location.search).get("cuisine");
+let endPoint = "https://dummyjson.com/recipes";
 
 // drop down menu og filtrering
 const selectElement = document.querySelector("#cuisine_filter");
 
-loadData(myCuisine);
+loadData();
 
-function loadData(cusine) {
-  fetch(`https://dummyjson.com/recipes/tag/${cusine}`)
+function loadData() {
+  fetch(endPoint)
     .then((response) => response.json())
     .then((data) => {
       showList(data.recipes);
@@ -16,9 +15,15 @@ function loadData(cusine) {
 }
 
 selectElement.addEventListener("change", (event) => {
-  console.log("value", event.target.value);
-  window.location.href = `opskriftliste.html?cuisine=${event.target.value}`;
-  loadData(event.target.value);
+  let cusine = event.target.value;
+  if (cusine == "All") {
+    endPoint = "https://dummyjson.com/recipes";
+  } else {
+    endPoint = `https://dummyjson.com/recipes/tag/${cusine}`;
+  }
+  // window.location.href = `opskriftliste.html?cuisine=${event.target.value}`;
+  console.log("endPoint ", endPoint);
+  loadData();
 });
 
 function showList(products) {

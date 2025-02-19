@@ -27,7 +27,7 @@
 }
 
 .ingredients_container ul {
-  margin-left: 6vw;
+  margin-left: 5vw;
   color: white;
 }
 
@@ -49,7 +49,9 @@
     color: white;
   }
 }
-
+.recipe_card {
+  padding-top: 30px;
+}
 .recepe_image img {
   border-radius: 25px;
   height: 500px;

@@ -19,11 +19,6 @@
             <a class="logo" href="index.html">NAM NAM</a>
         </div>
         <nav>
-            <form>
-                <input class="search" type="text" id="search_result" placeholder="Search..">
-                <button type="submit"></button>
-            </form>
-
             <ul class="menu">
                 <li> <a href="opskriftliste.html">Breakfast</a></li>
                 <li> <a href="opskriftliste.html">Lunch</a></li>
@@ -38,26 +33,32 @@
         </nav>
     </header>
     <main>
+
         <h1 class="center">Recipes</h1>
-        <select id="cuisine_filter">
-            <option value="All">All</option>
-            <option value="Asian">Asian</option>
-            <option value="Brazilian">Brazilian</option>
-            <option value="Greek">Greek</option>
-            <option value="Indian">Indian</option>
-            <option value="Italian">Italian</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Korean">Korean</option>
-            <option value="Lebanese">Lebanese</option>
-            <option value="Mediterranean">Mediterranean</option>
-            <option value="Mexican">Mexican</option>
-            <option value="Moroccan">Moroccan</option>
-            <option value="Pakistani">Pakistani</option>
-            <option value="Russian">Russian</option>
-            <option value="Smoothie">Smoothie</option>
-            <option value="Thai">Thai</option>
-            <option value="Turkish">Turkish</option>
-        </select>
+        <div class="grid_1-1">
+            <select id="cuisine_filter">
+                <option value="All">All</option>
+                <option value="Asian">Asian</option>
+                <option value="Brazilian">Brazilian</option>
+                <option value="Greek">Greek</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Lebanese">Lebanese</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Moroccan">Moroccan</option>
+                <option value="Pakistani">Pakistani</option>
+                <option value="Russian">Russian</option>
+                <option value="Smoothie">Smoothie</option>
+                <option value="Thai">Thai</option>
+                <option value="Turkish">Turkish</option>
+            </select>
+            <form>
+                <input class="search" type="text" id="search_result" placeholder="Search..">
+            </form>
+        </div>
 
         <div class="product_list_container">
 

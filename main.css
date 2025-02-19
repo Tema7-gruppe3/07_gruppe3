@@ -53,18 +53,6 @@ header {
   background-size: cover;
 }
 
-.search {
-  position: absolute;
-  float: right;
-  padding: 6px;
-  border-radius: 25px;
-  border: none;
-  top: 20px;
-  right: 47px;
-  font-size: 17px;
-  font-family: "Cherry Bomb One", serif;
-  font-weight: 400;
-}
 nav {
   display: flex;
   align-items: center;

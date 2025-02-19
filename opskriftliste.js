@@ -9,10 +9,10 @@ loadData(myCuisine);
 
 function loadData(cusine) {
   fetch(`https://dummyjson.com/recipes/tag/${cusine}`)
-    .then((response) => response.json()) //then(så) henter den gyldig data som er jsonfil
+    .then((response) => response.json())
     .then((data) => {
       showList(data.recipes);
-    }); //then (så) kaldes funktionen og dataen/produkterne fetches og benyttes i følgende functions skriv
+    });
 }
 
 selectElement.addEventListener("change", (event) => {
@@ -22,11 +22,9 @@ selectElement.addEventListener("change", (event) => {
 });
 
 function showList(products) {
-  //data er ændret til products fordi vi har hentet datean og nu skal vi benyttes produktdataen fra dataen
   console.log(products);
   const markup = products
     .map(
-      //products.map for hvert produkt (product =>) puttes et nyt produkt ind i variablen markup
       (product) =>
         `<div class="card">
             <a class="opskrift_billede" href="opskrift.html?id=${product.id}">
@@ -49,6 +47,6 @@ function showList(products) {
     </div>`
     )
     .join("");
-  // mellem listerne(array) er der komma, vha join vil der ikke være komma længere.
+
   productContainer.innerHTML = markup;
 }

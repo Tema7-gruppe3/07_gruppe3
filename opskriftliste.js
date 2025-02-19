@@ -1,6 +1,24 @@
 const productContainer = document.querySelector(".product_list_container");
 let endPoint = "https://dummyjson.com/recipes";
 
+const search = document.querySelector(".search");
+
+function getValue() {
+  // Get the input value
+  let inputValue = document.getElementById("search_result").value;
+  console.log("Input Value:", inputValue);
+  endPoint = endPoint = `https://dummyjson.com/recipes/search?q=${inputValue}`;
+  console.log("endPoint ", endPoint);
+  loadData();
+}
+
+search.addEventListener("keypress", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    getValue();
+  }
+});
+
 // drop down menu og filtrering
 const selectElement = document.querySelector("#cuisine_filter");
 
@@ -21,6 +39,7 @@ selectElement.addEventListener("change", (event) => {
   } else {
     endPoint = `https://dummyjson.com/recipes/tag/${cusine}`;
   }
+
   // window.location.href = `opskriftliste.html?cuisine=${event.target.value}`;
   console.log("endPoint ", endPoint);
   loadData();

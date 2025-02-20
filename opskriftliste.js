@@ -10,7 +10,7 @@ if (mealType) {
 const mealTypeText = document.querySelector(".category_title");
 
 mealTypeText.innerHTML = `
-${mealType}
+${mealType ? mealType : "All"}
 `;
 
 const search = document.querySelector(".search");

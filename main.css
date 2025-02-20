@@ -53,21 +53,9 @@ header {
   background-size: cover;
 }
 
-.search {
-  position: absolute;
-  float: right;
-  padding: 6px;
-  border-radius: 25px;
-  border: none;
-  top: 20px;
-  right: 47px;
-  font-size: 17px;
-  font-family: "Cherry Bomb One", serif;
-  font-weight: 400;
-}
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -132,6 +120,18 @@ nav {
 .burger {
   display: none;
 }
+
+.knap {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+}
+
 @media screen and (max-width: 980px) {
   .menu {
     display: none;
@@ -149,9 +149,13 @@ nav {
     font-size: 1.5rem;
     text-decoration: none;
     padding: 7px;
+    position: relative;
+    top: -2vw;
   }
   .burger {
     display: block;
+    position: relative;
+    top: -2vw;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -192,6 +196,15 @@ nav {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+  }
+  .center {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .knap {
+    grid-column: 1 / 2;
   }
 }
 
@@ -248,16 +261,6 @@ footer {
   padding-top: 20px;
 }
 
-.knap {
-  font-family: "Cherry Bomb One", serif;
-  font-weight: 400;
-  color: #fffbef;
-  background-color: #d43f41;
-  font-size: 2rem;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 25px;
-}
 .knap:hover {
   background-color: #fffbef;
   color: #d43f41;

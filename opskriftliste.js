@@ -7,6 +7,12 @@ if (mealType) {
   endPoint = `https://dummyjson.com/recipes/meal-type/${mealType}`;
 }
 
+const mealTypeText = document.querySelector(".category_title");
+
+mealTypeText.innerHTML = `
+${mealType}
+`;
+
 const search = document.querySelector(".search");
 
 function getValue() {

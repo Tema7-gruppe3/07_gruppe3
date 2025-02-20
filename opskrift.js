@@ -8,10 +8,14 @@ const urlParams = new URLSearchParams(queryString);
 const recipeId = urlParams.get("id");
 console.log("id", recipeId);
 
+//Finder HTML-containeren, hvor opskriften skal vises
 let recipeContainer = document.querySelector(".recipe_card");
+
+//Henter opskriften fra API'et baseret på "recipeId"
 fetch(`https://dummyjson.com/recipes/${recipeId}`)
   .then((response) => response.json())
   .then((data) => {
+    //Dynamisk opbygning af HTML med opskriftsdata
     recipeContainer.innerHTML = `
             <div class="recepe_image">
                 <img src="https://cdn.dummyjson.com/recipe-images/${recipeId}.webp" alt="recipe-image">

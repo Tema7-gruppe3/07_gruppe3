@@ -7,9 +7,9 @@ if (mealType) {
   endPoint = `https://dummyjson.com/recipes/meal-type/${mealType}`;
 }
 
-const mealTypeText = document.querySelector(".category_title");
+const categoryTitle = document.querySelector(".category_title");
 
-mealTypeText.innerHTML = `
+categoryTitle.innerHTML = `
 ${mealType ? mealType : "All"}
 `;
 
@@ -19,6 +19,9 @@ function getValue() {
   // Get the input value
   let inputValue = document.getElementById("search_result").value;
   console.log("Input Value:", inputValue);
+  categoryTitle.innerHTML = `
+${inputValue}
+`;
   endPoint = `https://dummyjson.com/recipes/search?q=${inputValue}`;
   console.log("endPoint ", endPoint);
   loadData();

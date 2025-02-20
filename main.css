@@ -40,7 +40,7 @@ p {
 */
 /************************** Menu ******************************/
 header {
-  position: sticky;
+  position: relative;
   top: 0;
   background-image: url(header.svg);
   aspect-ratio: 1513/186;
@@ -51,6 +51,7 @@ header {
   font-weight: 400;
   z-index: 100;
   background-size: cover;
+  align-items: center;
 }
 
 nav {

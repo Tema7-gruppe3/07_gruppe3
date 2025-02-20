@@ -64,22 +64,14 @@ function showList(products) {
                 <img class="wave" src="wave.svg" alt="wave">
                 </a>
 
-            <div class="text">
-                <h2>${product.name}</h2>
+
+                <h2 class="meal_name">${product.name}</h2>
+                <div class="text">
                     <p>Mealtype: ${product.mealType} </p>
                 <p>Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>
                 <p>Difficulty: ${product.difficulty}</p>
                 <p>Servings: ${product.servings} </p>
-                  
             </div>
-
-                <h2 class="text">${product.name}</h2>
-                <div>
-                <p class="text">Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>
-                <p class="text">Difficulty: ${product.difficulty}</p>
-                <p class="text">Servings: ${product.servings} </p>
-                                </div>
-
             <div>
                 <a class="toRecepe" href="opskrift.html?id=${product.id}">
                     To recipe

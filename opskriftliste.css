@@ -144,6 +144,10 @@ button:hover {
   padding-left: 15px;
 }
 
+.meal_name {
+  padding-left: 12px;
+}
+
 .toRecepe {
   margin-left: 10px;
   background-color: #fffbef;

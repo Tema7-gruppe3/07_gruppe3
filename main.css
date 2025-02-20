@@ -120,6 +120,27 @@ nav {
 .burger {
   display: none;
 }
+
+.knap {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 980px) {
   .menu {
     display: none;
@@ -181,6 +202,15 @@ nav {
     padding-right: 2rem;
     padding-bottom: 2rem;
   }
+  .center {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .knap {
+    grid-column: 1 / 2;
+  }
 }
 
 /************************** Generelt ******************************/
@@ -236,16 +266,6 @@ footer {
   padding-top: 20px;
 }
 
-.knap {
-  font-family: "Cherry Bomb One", serif;
-  font-weight: 400;
-  color: #fffbef;
-  background-color: #d43f41;
-  font-size: 2rem;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 25px;
-}
 .knap:hover {
   background-color: #fffbef;
   color: #d43f41;

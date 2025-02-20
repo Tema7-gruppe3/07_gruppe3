@@ -57,12 +57,12 @@ function showList(products) {
                         src="https://cdn.dummyjson.com/recipe-images/${product.id}.webp" alt="produktbillede">
                 <img class="wave" src="wave.svg" alt="wave">
                 </a>
-            <div class="text">
-                <h2>${product.name}</h2>
-                <p>Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>
-                <p>Difficulty: ${product.difficulty}</p>
-                <p>Servings: ${product.servings} </p>
-            </div>
+                <h2 class="text">${product.name}</h2>
+                <div>
+                <p class="text">Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>
+                <p class="text">Difficulty: ${product.difficulty}</p>
+                <p class="text">Servings: ${product.servings} </p>
+                                </div>
             <div>
                 <a class="toRecepe" href="opskrift.html?id=${product.id}">
                     To recipe

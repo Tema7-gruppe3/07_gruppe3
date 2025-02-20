@@ -1,0 +1,104 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/***********************/
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  color: #5e4f42;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.center {
+  text-align: center;
+}
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.grid_1_1 img {
+  border-radius: 25px;
+}
+
+input {
+  padding: 6px;
+  border-radius: 25px;
+  border: none;
+  font-size: 17px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  background-color: #fffbef;
+  color: #d43f41;
+  border: solid;
+}
+
+select {
+  height: 40px;
+  align-self: center;
+  padding: 0px 8px 8px 8px;
+  display: inline;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  background-color: #d43f41;
+  color: white;
+}
+
+.button {
+  background-color: #d43f41;
+  color: #fffbef;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #d43f41;
+}
+.button:hover {
+  color: #d43f41;
+  background-color: #fffbef;
+  border-style: solid;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 6px;
+  border-radius: 25px;
+  border: none;
+  font-size: 17px;
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  background-color: #fffbef;
+  color: #d43f41;
+  border: solid;
+}
+
+form {
+  gap: 20px;
+  padding: 20px;
+}

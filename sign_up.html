@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chenla&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sign_up.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="index.html">NAM NAM</a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li> <a href="opskriftliste.html">Breakfast</a></li>
+                <li> <a href="opskriftliste.html">Lunch</a></li>
+                <li> <a href="opskriftliste.html">Dinner</a></li>
+                <li> <a href="opskriftliste.html">Dessert</a></li>
+                <li> <a href="sign_up.html">Sign Up</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="center">Join the NAM NAM Community!</h1>
+
+        <div class="grid_1_1">
+            <p>As a member of NAM NAM, you get access to a world of delicious inspiration! Enjoy exclusive newsletters
+                filled with the
+                latest recipes and insightful cooking tips. Be the first to discover new and exciting dishes before
+                anyone else.
+                But that's not all—you’ll be part of a warm and welcoming community where food lovers share their
+                favorite recipes,
+                exchange cooking experiences, and inspire each other. Whether you're looking for new ideas or want to
+                showcase your own
+                creations, NAM NAM is the perfect place to connect and share your passion for food.
+                Join today and let’s cook up something amazing together!</p>
+
+            <img src="coverbillede.png" alt="cover">
+        </div>
+        <form action="#">
+            <h2>Name</h2>
+            <div class="grid_1_1">
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+            <h2>E-mail</h2>
+            <input type="text" placeholder="Your e-mail..">
+            <h2>Cuisine</h2>
+            <select id="cuisine_filter">
+                <option value="Asian">Asian</option>
+                <option value="Brazilian">Brazilian</option>
+                <option value="Greek">Greek</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Lebanese">Lebanese</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Moroccan">Moroccan</option>
+                <option value="Pakistani">Pakistani</option>
+                <option value="Russian">Russian</option>
+                <option value="Smoothie">Smoothie</option>
+                <option value="Thai">Thai</option>
+                <option value="Turkish">Turkish</option>
+            </select>
+            <h2>Mealtype</h2>
+            <select id="mealtype_filter">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Snack">Snack</option>
+            </select>
+            <h2>Ingredients</h2>
+            <textarea id="ingredients" name="ingredients" placeholder="Your ingredients.."
+                style="height:200px; width:80%"></textarea>
+            <h2>Recepe</h2>
+            <textarea id="recepe" name="recepe" placeholder="Your recepe.." style="height:200px; width:80%"></textarea>
+            <br>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <a class="footnavn" href="index.html">NAM NAM</a>
+    </footer>
+</body>
+
+</html>

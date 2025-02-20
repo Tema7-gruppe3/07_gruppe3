@@ -1,5 +1,11 @@
+const mealType = new URLSearchParams(document.location.search).get("mealType");
+
 const productContainer = document.querySelector(".product_list_container");
 let endPoint = "https://dummyjson.com/recipes";
+
+if (mealType) {
+  endPoint = `https://dummyjson.com/recipes/meal-type/${mealType}`;
+}
 
 const search = document.querySelector(".search");
 
@@ -7,7 +13,7 @@ function getValue() {
   // Get the input value
   let inputValue = document.getElementById("search_result").value;
   console.log("Input Value:", inputValue);
-  endPoint = endPoint = `https://dummyjson.com/recipes/search?q=${inputValue}`;
+  endPoint = `https://dummyjson.com/recipes/meal-type/${mealType}`;
   console.log("endPoint ", endPoint);
   loadData();
 }
@@ -59,9 +65,11 @@ function showList(products) {
                 </a>
             <div class="text">
                 <h2>${product.name}</h2>
+                    <p>Mealtype: ${product.mealType} </p>
                 <p>Cooking time: ${product.prepTimeMinutes + product.cookTimeMinutes}min.</p>
                 <p>Difficulty: ${product.difficulty}</p>
                 <p>Servings: ${product.servings} </p>
+                  
             </div>
             <div>
                 <a class="toRecepe" href="opskrift.html?id=${product.id}">

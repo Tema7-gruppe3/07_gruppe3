@@ -13,7 +13,7 @@ function getValue() {
   // Get the input value
   let inputValue = document.getElementById("search_result").value;
   console.log("Input Value:", inputValue);
-  endPoint = `https://dummyjson.com/recipes/meal-type/${mealType}`;
+  endPoint = `https://dummyjson.com/recipes/search?q=${inputValue}`;
   console.log("endPoint ", endPoint);
   loadData();
 }

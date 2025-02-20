@@ -17,12 +17,14 @@ img {
 .search {
   padding: 6px;
   border-radius: 25px;
-  border: none;
+  border: solid;
+  border-width: 3px;
   font-size: 17px;
   font-family: "Cherry Bomb One", serif;
   font-weight: 400;
-  background-color: #d43f41;
-  color: white;
+  background-color: #fffbef;
+  border-color: #d43f41;
+  color: #d43f41;
 }
 
 select {
@@ -101,6 +103,7 @@ button:hover {
 
   .card {
     position: relative;
+    display: grid;
     grid-template-rows: subgrid;
     grid-row: span 4;
     background-color: #d43f41;
@@ -138,7 +141,7 @@ button:hover {
 }
 
 .text {
-  padding: 15px;
+  padding-left: 15px;
 }
 
 .toRecepe {

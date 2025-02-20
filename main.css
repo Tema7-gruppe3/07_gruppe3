@@ -55,7 +55,7 @@ header {
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -130,15 +130,6 @@ nav {
   text-decoration: none;
   padding: 10px;
   border-radius: 25px;
-  grid-column: 2 / 3;
-  text-align: center;
-}
-
-.center {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 980px) {
@@ -158,9 +149,13 @@ nav {
     font-size: 1.5rem;
     text-decoration: none;
     padding: 7px;
+    position: relative;
+    top: -2vw;
   }
   .burger {
     display: block;
+    position: relative;
+    top: -2vw;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);

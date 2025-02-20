@@ -31,6 +31,26 @@
   color: white;
 }
 
+.knap {
+  font-family: "Cherry Bomb One", serif;
+  font-weight: 400;
+  color: #fffbef;
+  background-color: #d43f41;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 680px) {
   .product_container {
     display: grid;
